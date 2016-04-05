@@ -70,12 +70,6 @@ HTTP Status Codeは以下参照
   </tr>
 </table>
 
-
-|:-----------||:-----------|
-| This       |        This |
-| column     |      column |
-
-
 !!! 
 TODO 検討、URLは次のような形式にするか？
 http://domain/api/v1/gantt/load
@@ -83,11 +77,11 @@ http://domain/api/v1/gantt/load
 
 #### リクエストパラメータ
 
-##### user[email]
-ユーザーのメールアドレス
+| パラメータ名 | 型 | 説明 |
+|:-|:-|:-|
+| project_id | Number | プロジェクトを特定するための値 |
+| hoge | String | 他何かあれば追記 |
 
-##### user[password]
-ユーザーのパスワード
 
 
 
