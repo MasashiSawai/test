@@ -56,7 +56,7 @@ HTTP Status Codeは以下参照
 </table>
 
 !!! 
-TODO 検討、URLは次のような形式にするか？
+TODO 検討、URLは次のような形式にするか？<br />
 http://domain/api/v1/gantt/load/{project_id}
 
 
