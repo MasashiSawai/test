@@ -70,6 +70,12 @@ HTTP Status Codeは以下参照
   </tr>
 </table>
 
+
+
+| This       |        This |
+| column     |      column |
+
+
 !!! 
 TODO 検討、URLは次のような形式にするか？
 http://domain/api/v1/gantt/load
@@ -85,6 +91,22 @@ http://domain/api/v1/gantt/load
 
 
 
+
+
+
+
+
+////////////////////////////////////////////////
+// 記述例
+
+| Left align | Right align | Center align |
+|:-----------|------------:|:------------:|
+| This       |        This |     This     |
+| column     |      column |    column    |
+| will       |        will |     will     |
+| be         |          be |      be      |
+| left       |       right |    center    |
+| aligned    |     aligned |   aligned    |
 
 
 
