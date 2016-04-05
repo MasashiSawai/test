@@ -1,8 +1,6 @@
-# API
-Synco API仕様書
+# Synco API仕様書
+Version 1.0 (2016/03/31)
 
-## Version
-1.0
 
 ## 1. API一覧
 
@@ -16,7 +14,13 @@ Synco API仕様書
 
 ## 2. 共通仕様
 ### 2.1. リクエスト
-- TODO 以下を検討して決める
+TODO 以下を検討して決める
+リクエストヘッダーで必須とするもの
+| 名称 | 型 | 説明 |
+|:--|:--|:--|
+| X-Synco-Application | String | クライアント認証用の値を設ける？ |
+
+TODO 以下を検討して決める
 - 日本語の文字コード(UTF8?)
 - セッションの有効期限(1日?)
 - 他諸々
@@ -62,25 +66,24 @@ HTTP Status Codeは以下参照
 <table>
   <tr>
     <td>URL</td>
-    <td>http://domain/gantt/load</td>
+    <td>http://domain/gantt/load/{project_id}</td>
   </tr>
   <tr>
     <td>メソッド</td>
-    <td>POST</td>
+    <td>GET</td>
   </tr>
 </table>
 
 !!! 
 TODO 検討、URLは次のような形式にするか？
-http://domain/api/v1/gantt/load
+http://domain/api/v1/gantt/load/{project_id}
 
 
-#### リクエストパラメータ
+#### URLパラメータ
 
 | パラメータ名 | 型 | 説明 |
 |:--|:--|:--|
 | project_id | Number | プロジェクトを特定するための値 |
-| hoge | String | 他何かあれば追記 |
 
 
 
@@ -90,6 +93,24 @@ http://domain/api/v1/gantt/load
 
 
 
+
+
+
+
+
+
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
 ////////////////////////////////////////////////
 // 記述例
 
