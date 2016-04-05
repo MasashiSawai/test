@@ -71,7 +71,7 @@ HTTP Status Codeは以下参照
 </table>
 
 
-
+|:-----------||:-----------|
 | This       |        This |
 | column     |      column |
 
