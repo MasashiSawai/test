@@ -7,8 +7,8 @@ Synco API仕様書
 ## 1. API一覧
 
 ### ガントチャートAPI
-- [ガントチャート取得]
-- [ガントチャート保存]
+- ガントチャート取得
+- ガントチャート保存
 
 ### XXXX API
 - [追記していく、、、]
@@ -56,3 +56,36 @@ HTTP Status Codeは以下参照
   "message": ""   // -> ユーザーへ通知したいメッセージなど(共通)
 }
 ```
+
+## 3. 詳細仕様
+### 3.1.1. ガントチャート取得
+<table>
+  <tr>
+    <td>URL</td>
+    <td>http://domain/gantt/load</td>
+  </tr>
+  <tr>
+    <td>メソッド</td>
+    <td>POST</td>
+  </tr>
+</table>
+
+!!! 
+TODO 検討、URLは次のような形式にするか？
+http://domain/api/v1/gantt/load
+
+
+#### リクエストパラメータ
+
+##### user[email]
+ユーザーのメールアドレス
+
+##### user[password]
+ユーザーのパスワード
+
+
+
+
+
+
+
