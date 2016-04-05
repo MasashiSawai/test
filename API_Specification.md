@@ -14,14 +14,14 @@ Version 1.0 (2016/03/31)
 
 ## 2. 共通仕様
 ### 2.1. リクエスト
-TODO 以下を検討して決める
+!!! TODO 以下を検討して決める
 リクエストヘッダーで必須とするもの
 
 | 名称 | 型 | 説明 |
 |:--|:--|:--|
 | X-Synco-Application | String | クライアント認証用の値を設ける？ |
 
-TODO 以下を検討して決める
+!!! TODO 以下を検討して決める
 - 日本語の文字コード(UTF8?)
 - セッションの有効期限(1日?)
 - 他諸々
@@ -62,6 +62,7 @@ HTTP Status Codeは以下参照
 }
 ```
 
+
 ## 3. 詳細仕様
 ### 3.1.1. ガントチャート取得
 <table>
@@ -86,10 +87,46 @@ http://domain/api/v1/gantt/load/{project_id}
 |:--|:--|:--|
 | project_id | Number | プロジェクトを特定するための値 |
 
+#### レスポンス
+
+| パラメータ名 | 型 | 説明 |
+|:--|:--|:--|
+| gantt | Gantt[] | ガントチャートの配列データ |
+| timespan | Timespan | 本日の列をハイライトさせるオブジェクト |
+
+レスポンス例
+```
+# データ取得成功
+{"success":"ログインしました"}
+# ログインに失敗した場合
+{"errors":[{"message":"メールアドレスまたはパスワードが違います。"}]}
+# セッションが切れた場合
+{"errors":[{"message":"セッションがタイムアウトしました。もう一度ログインしてください。"}]}
+```
 
 
 
+## 4. オブジェクト
+ライブラリで用いられるオブジェクトなど、固有のものをまとめます。
 
+### Gantt
+| プロパティ名 | 型 | 説明 |
+|:--|:--|:--|
+| id | String | 後で |
+| name | String | 後で |
+| tasks | Task | 後で |
+
+### Task
+| プロパティ名 | 型 | 説明 |
+|:--|:--|:--|
+| id | String | 後で |
+| name | String | 後で |
+
+### Timespan
+| プロパティ名 | 型 | 説明 |
+|:--|:--|:--|
+| ?? | ?? | 後で |
+| ?? | ?? | 後で |
 
 
 
@@ -113,17 +150,9 @@ http://domain/api/v1/gantt/load/{project_id}
 <br />
 <br />
 ////////////////////////////////////////////////
-// 記述例
+// example
 
 | Left align | Right align | Center align |
 |:-----------|------------:|:------------:|
 | This       |        This |     This     |
-| column     |      column |    column    |
-| will       |        will |     will     |
-| be         |          be |      be      |
-| left       |       right |    center    |
-| aligned    |     aligned |   aligned    |
-
-
-
 
